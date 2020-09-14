@@ -3,50 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Civilian Awards</title>
     <style>
-        img {
+        .img1 {
             border-style: solid;
             border-color: #898a8c;
             box-shadow: 10px 10px 10px #aca1a4;
         }
+        .img-responsive {
+            height: auto;
+            widht: auto;
+            max-height: 50px;
+            max-width: 125px;
+            border-color:#343a40;
+            border-style: solid;
+        }
     </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="row bg-warning">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="awards_main.html"><img src="../Pictures/brand.jpg" class="img-responsive" alt="Brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="awards_main.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="civilian_awards.html">Civilian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallantry_awards.html">Gallantry</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-sm btn-outline-light" type="button" data-toggle="modal" data-target="#loginModal">Login</button>
+            <!--Modal-->
+            <div class="modal" role="dialog" id="loginModal">
+                <div class="modal-dialog" role="form">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark">
+                            <h3 class="modal-title text-light">Login</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body bg-secondary">
+                            <form>
+                                <div>
+                                    <label for="username" class="text-light">Username: </label>
+                                    <input type="text" name="username" placeholder="Username">
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="password" class="text-light">Password: </label>
+                                    <input type="password" name="password" placeholder="Password">
+                                </div>      
+                                <br>   
+                                <div>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>                                                     
+                            </form>
+                        </div>
+                        <div class="modal-footer bg-dark">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            <button type="reset" class="btn btn-warning">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <br><br>
+        <div class="jumbotron bg-warning">
             <h1 class="text-dark">Civilian Awards</h1>
         </div>
         <br><br>
         <div class="row">
             <div class="col-sm-6">
-                <img src="../Pictures/bharat_ratna.jpg" alt="Bharat Ratna" height="50%" width="100%">
+                <img class="img1" src="../Pictures/bharat_ratna.jpg" alt="Bharat Ratna" height="50%" width="100%">
                 <div class="caption bg-secondary">
-                    <h3 class="text-warning">Bharat Ratna</h3>
+                    <h2 class="text-warning">Bharat Ratna</h3>
                 </div>
             </div>
             <div class="col-sm-6">
-                <img src="../Pictures/padma_vibhushan.jpg" alt="Padma Vibhushan" height="50%" width="100%">
+                <img class="img1" src="../Pictures/padma_vibhushan.jpg" alt="Padma Vibhushan" height="50%" width="100%">
                 <div class="caption bg-secondary">
-                    <h3 class="text-warning">Padma Vibhushan</h3>
+                    <h2 class="text-warning">Padma Vibhushan</h3>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6">
-                <img src="../Pictures/padma_bhushan.jpg" alt="Padma Bhushan" height="75%" width="100%">
+                <img class="img1" src="../Pictures/padma_bhushan.jpg" alt="Padma Bhushan" height="75%" width="100%">
                 <div class="caption bg-secondary">
-                    <h3 class="text-warning">Padma Bhushan</h3>
+                    <h2 class="text-warning">Padma Bhushan</h3>
                 </div>
             </div>
             <div class="col-sm-6">
-                <img src="../Pictures/padma_shri.jpg" alt="Padma Shri" height="75%" width="100%">
+                <img class="img1" src="../Pictures/padma_shri.jpg" alt="Padma Shri" height="75%" width="100%">
                 <div class="caption bg-secondary">
-                    <h3 class="text-warning">Padma Shri</h3>
+                    <h2 class="text-warning">Padma Shri</h3>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>
