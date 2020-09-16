@@ -7,11 +7,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <script>
+        function sConsole() {
+        var val1= document.getElementById("name");
+        console.log("Name:",val1.value);
+        var val2= document.getElementById("email");
+        console.log("Email:",val2.value);
+        var val3= document.getElementById("message");
+        console.log("Message:",val3.value);
+    }
+    </script> 
     <style>
         .img-responsive {
             height: auto;
-            widht: auto;
+            width: auto;
             max-height: 50px;
             max-width: 125px;
             border-color:#343a40;
@@ -83,13 +93,13 @@
     <br><br>
 
     <div class="row">
-        <form action="" onsubmit="event.preventDefault(); sConsole();">
-        <div class="col-sm"></div>
+        <div class="col-sm-2"></div>
         <div class="col-sm-8 bg-light border border-secondary rounded-lg">
             <div class="row text-center bg-secondary">
                 <h1 class="text-light offset-4">Contact us</h1>
             </div>
             <br><br>
+            <form action="" onsubmit="event.preventDefault(); sConsole();"></form>
             <div class="row">
             <div class="col-md-6">
                 <div class="md-form mb-0">
@@ -119,19 +129,10 @@
             </div>
             <br><br>
         </div>
-        <div class="col-sm"></div>
+        <div class="col-sm-2"></div>
     </form>
     </div>
 </div>
-<script>
-    function sConsole() {
-    var val1= document.getElementById("name");
-    console.log("Name:",val1.value);
-    var val2= document.getElementById("email");
-    console.log("Email:",val2.value);
-    var val3= document.getElementById("message");
-    console.log("Message:",val3.value);
-}
-</script>
+
 </body>
 </html>
